@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle & Save - Pumper</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bundle & Save</h1>
+      <div class="bogo-banner">YAY! It's BOGO</div>
+    </header>
+
+    <div class="pricing-tiers">
+      <!-- 1 Pair Box -->
+      <div class="price-box active" onclick="toggleOptions(1)">
+        <div class="tier-header">
+          <h3>1 Pair</h3>
+          <div class="price">DKK 195.00</div>
+          <div class="discount">50% OFF</div>
+        </div>
+        <div class="options visible">
+          <div class="size-options">
+            <label>Size</label>
+            <select class="size-select" onchange="updateTotal()">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label>Colour</label>
+            <div class="colors">
+              <div class="color black active" data-color="black"></div>
+              <div class="color red" data-color="red"></div>
+              <div class="color blue" data-color="blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Pair Box (Most Popular) -->
+      <div class="price-box popular" onclick="toggleOptions(2)">
+        <div class="popular-tag">Most Popular</div>
+        <div class="tier-header">
+          <h3>2 Pair</h3>
+          <div class="price">DKK 345.00</div>
+          <div class="discount">40% OFF</div>
+        </div>
+        <div class="options">
+          <div class="size-options">
+            <label>Size</label>
+            <select class="size-select" onchange="updateTotal()">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label>Colour</label>
+            <div class="colors">
+              <div class="color black" data-color="black"></div>
+              <div class="color red" data-color="red"></div>
+              <div class="color blue" data-color="blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Pair Box -->
+      <div class="price-box" onclick="toggleOptions(3)">
+        <div class="tier-header">
+          <h3>3 Pair</h3>
+          <div class="price">DKK 528.00</div>
+          <div class="discount">60% OFF</div>
+        </div>
+        <div class="options">
+          <div class="size-options">
+            <label>Size</label>
+            <select class="size-select" onchange="updateTotal()">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div class="color-options">
+            <label>Colour</label>
+            <div class="colors">
+              <div class="color black" data-color="black"></div>
+              <div class="color red" data-color="red"></div>
+              <div class="color blue" data-color="blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="total-section">
+      <div class="shipping">Free 2 Day Shipping</div>
+      <div class="total">
+        <span>Total:</span>
+        <span class="total-price">DKK 360.00</span>
+      </div>
+      <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+
+    <footer>@ Powered by Pumper</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
